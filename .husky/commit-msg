@@ -1,0 +1,4 @@
+echo ">>> commit-msg running..."
+
+echo ">>> npx commitlint --edit"
+npx commitlint --edit

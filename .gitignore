@@ -1,0 +1,16 @@
+# editor settings
+.idea/
+.vscode/*
+!.vscode/settings.json
+
+# dependencies
+node_modules/
+
+# lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# outputs
+dist/
+output/

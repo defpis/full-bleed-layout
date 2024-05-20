@@ -1,0 +1,29 @@
+{
+  "env": { "node": true, "browser": true },
+
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": { "jsx": true },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+
+  "plugins": ["canonical"],
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
+
+  "settings": {
+    "react": { "version": "detect" }
+  },
+
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "canonical/no-unused-exports": [2, { "tsConfigPath": "./tsconfig.json" }]
+  }
+}
